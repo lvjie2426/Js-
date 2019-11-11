@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //三元表达式 --表达式一定有返回值
+        // var un = prompt('输入数字，我来补0')
+        // var result = (un <= 10) ? '0' + un : un;
+        // alert(result)
+
+
+        //switch 根据表达式的返回值，来找匹配的case 执行对应代码段
+        // var week = prompt('请输入周几')
+        // switch (Number(week)) {
+        //     case 1:
+        //         alert('今天是周一')
+        //         break;
+        //     case 2:
+        //         alert('今天是周2')
+        //         break;
+        //     case 3:
+        //         alert('今天是周3')
+        //         break;
+        //     default:
+        //         break;
+
+        // }
+
+        // var n1 = prompt('')
+        //     //条件值必须 和 case 全值相等
+        // var n2 = prompt('')
+        // if (n1 != n2 && n1 != undefined && n2 != undefined) {
+        //     alert(n1 > n2 ? n1 : n2)
+        // }
+
+        // 判断奇数偶数
+        // var num = prompt('输入数字我来判断奇偶');
+        // if (num % 2 == 0) {
+        //     alert('偶数')
+        // } else {
+        //     alert('基数')
+        // }
+        // var money = prompt('多少钱')
+        // if (money >= 2000) {
+        //     alert('西餐')
+        // } else if (1500 <= money && money < 2000) {
+        //     alert('中餐')
+
+        // } else if (500 <= money && money < 1500) {
+        //     alert('快餐')
+
+        // } else if (money < 500) {
+        //     alert('多带钱')
+        // }
+        // var num = 0;
+        // var num2 = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 2 == 0) {
+        //         num += i;
+        //         console.log(i, num)
+        //     }
+        //     num2 += i
+        //     console.log(i, num2)
+        // }
+        // var sum = 0;
+        // for (var i = 0; i < 101; i++) {
+        //     sum += i;
+        // }
+        // console.log(sum)
+
+        // var munt = prompt('输入班级人数');
+        // var num = 0
+        // for (var i = 1; i <= munt; i++) {
+        //     num += parseFloat(prompt('第' + i + '成绩'));
+        // }
+        // console.log('总分' + num, '平均分:' + num / munt)
+        for (var i = 1; i <= 10; i++) {
+            var str = ''
+            for (var k = 10; i <= k; k--) {
+                str = str + '*'; // 
+            }
+            console.log('\n' + str)
+        }
+
+
+        var num
+        var star = ''
+        for (var i = 1; i <= 10; i++) {
+            num = ''
+            for (var k = 0; k < 10; k++) {
+                num += '*'
+            }
+            star += num + '\n'
+        }
+        console.log(star)
+
+        var num2 = ''
+        for (var i = 1; i <= 10; i++) {
+            for (var k = 0; k < 10; k++) {
+                num2 += '*'
+            }
+            num2 = num2 + '\n'
+        }
+        console.log(num2)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //获取用户操作 保存在变量里 由于结果为固定的几个值 ，启动分支switch
+        var changes = prompt('请输入您的操作:\n 1.存钱\n 2.取钱\n3.显示余额\n4.退出\n');
+        var ye = 100; //初始余额
+
+        switch (changes) { //switch 中的是表达式，根据表达式的返回值找匹配的case 执行对应语句
+            case '1':
+                var money = prompt('输入存入金额');
+                money = parseInt(money);
+                ye += money
+                alert('操作:存款-金额:' + money + '余额:' + ye)
+                break;
+            case '2':
+                var getmoney = prompt('输入存入金额');
+                getmoney = parseInt(getmoney);
+                ye = (ye - getmoney >= 0) ? ye - getmoney : '余额不足'
+                if (ye != '余额不足') {
+                    alert('操作:取款-金额:' + getmoney + '余额:' + ye)
+                } else {
+                    alert('余额不足')
+                }
+                break;
+            case '3':
+                alert('余额:' + ye)
+                break;
+            case '4':
+                alert('您已退出')
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+
+</html>
